@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        /* ... */
+        .seletor{   
+            color: aqua;
+            font-size: 30px;
+            text-align: center;
+            /* cor da borda */
+            border: solid 5px rgb(13, 240, 194);
+            box-shadow: 0px 5px 5px rgb(22, 22, 22) ;
+            border-radius: 10px;
+            background-color: rgba(27, 57, 141, 0.836);
+        }
+
+        /* usando pseudo classe*/
+        .seletor:hover {
+            color: black;
+            background-color: rgb(0, 255, 55);
+        }
+
+        .seletor::first-letter{
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .tema_dark{
+            background-color: rgba(37, 37, 37, 0.89);
+        }
+    </style>
+</head>
+
+<body  class="tema_dark">
+    <div>
+        <div class="seletor">Conteúdo</div>
+    </div>
+</body>
+
+</html>
